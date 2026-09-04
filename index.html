@@ -342,7 +342,7 @@
             html += `<div class="alert alert-light border border-light-subtle shadow-sm text-center py-5 mb-4 rounded-4"><i class="fas fa-folder-open text-muted fs-1 mb-3 d-block"></i>Chưa có tài liệu nào trong tổ chuyên môn của bạn.</div>`;
         } else {
             depts.forEach(dept => {
-                html += `<h6 class="fw-bold text-secondary mb-3" style="font-size: 1.05rem;"><i class="far fa-building me-2"></i>Tổ: ${dept}</h6><div class="row g-4 mb-4">`;
+                html += `<h6 class="fw-bold text-secondary mb-3" style="font-size: 1.05rem;"><i class="far fa-building me-2"></i>Bộ môn: ${dept}</h6><div class="row g-4 mb-4">`;
                 Object.values(folders).filter(f => f.dept === dept).forEach(f => {
                     html += `
                     <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
